@@ -1,0 +1,20 @@
+@import "variables";
+
+%basic {
+    font-size: 24px;
+    font-weight: $general-font-weight;
+    line-height: 1.5;
+    color: $dark-grey-color;
+    text-align: left;
+}
+
+body {
+    /* Full Height and Width */
+    width: 100%;
+
+    @extend %basic;
+    font-family: $fonts;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $main-background-color;
+}

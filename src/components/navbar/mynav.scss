@@ -1,0 +1,21 @@
+@import "../../../styles/variables";
+
+.right{
+    float: right;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.nav{
+    background-color: $aqua-color;
+}
+
+.brand{
+    margin-right: 30px;
+}

@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import React from 'react';
 import {
-  Button
+  Card
 } from 'reactstrap';
-import './App.css';
+import Landing from "components/landing/landing";
+import MyNav from 'components/navbar/mynav';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-          <h1>
-            Rosie's website
-          </h1>
-          <Button color="primary">primary</Button>
-      </header>
+      <Card>
+        <Landing/>
+        <MyNav/>
+      </Card>
     </div>
   );
 }
