@@ -1,5 +1,4 @@
 import React from "react";
-import { Button, NavLink } from 'reactstrap'
 import "./landing.scss";
 
 export const Landing =  () => {
