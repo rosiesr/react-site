@@ -9,7 +9,7 @@ export const About =  () => {
                 <div className="col-6 ">
                     <Card className="aboutcard" style={{ backgroundColor: '#7C7C7C', borderRadius: '40px' }}>
                         <CardTitle style={{fontSize: '48px', color: '#52DEE5', margin: '10px'}}>
-                            About Rosie
+                            About
                         </CardTitle>
                         <CardText style={{color:'#EEE5E9', margin:'10px'}}>
                             I was born and raised in South Florida and has always loved the problem-solving 
