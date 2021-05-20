@@ -1,3 +1,9 @@
+# Rosie's React Personal Website
+
+Create React App read me below
+
+Used ReactStrap library 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
