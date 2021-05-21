@@ -23,3 +23,9 @@
 .experiencecard{
     height: 100%
 }
+
+.smallspace{
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 1%; /* change this to whatever height you want it */
+}

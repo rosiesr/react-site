@@ -7,6 +7,7 @@ import MyNav from 'components/navbar/mynav';
 import About from 'components/about/about';
 import Experience from 'components/experience/experience';
 import Projects from 'components/projects/projects';
+import Footer from 'components/footer/footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <About/>
         <Experience/>
         <Projects/>
+        <Footer/>
       </Card>
     </div>
   );

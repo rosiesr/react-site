@@ -8,28 +8,33 @@ export const Experience =  () => {
             <div className="experiencevertical d-flex justify-content-center">
             <div className="experiencecontainter row align-middle">
                 <div className="col-8">
-                    <Card style={{height: '16%', borderRadius: '10px'}}>
-                        <CardText>card text ehre</CardText>
+                    <Card style={cardStyle}>
+                        <CardText style={cardTextStyle}>PagerDuty: Software Engineer Intern</CardText>
                     </Card>
-                    <Card style={{height: '16%', borderRadius: '10px'}}>
-                        <CardText>card text ehre</CardText>
+                    <br className="smallspace"/>
+                    <Card style={cardStyle}>
+                        <CardText style={cardTextStyle}>Yale Computer Society: Vice President, Workshop Team Lead, Secretary</CardText>
                     </Card>
-                    <Card style={{height: '16%', borderRadius: '10px'}}>
-                        <CardText>card text ehre</CardText>
+                    <br className="smallspace"/>
+                    <Card style={cardStyle}>
+                        <CardText style={cardTextStyle}>Rocketansky: Software Engineer Intern</CardText>
                     </Card>
-                    <Card style={{height: '16%', borderRadius: '10px'}}>
-                        <CardText>card text ehre</CardText>
+                    <br className="smallspace"/>
+                    <Card style={cardStyle}>
+                        <CardText style={cardTextStyle}>Yale College Council: Davenport Senator and Deputy Director of Academics</CardText>
                     </Card>
-                    <Card style={{height: '16%', borderRadius: '10px'}}>
-                        <CardText>card text ehre</CardText>
+                    <br className="smallspace"/>
+                    <Card style={cardStyle}>
+                        <CardText style={cardTextStyle}>Yale Physics Department: Phys 200 Peer Tutor</CardText>
                     </Card>
-                    <Card style={{height: '16%', borderRadius: '10px'}}>
-                        <CardText>card text ehre</CardText>
+                    <br className="smallspace"/>
+                    <Card style={cardStyle}>
+                        <CardText style={cardTextStyle}>Other Experiences</CardText>
                     </Card>
                 </div>
                 <div className="col-4 experiencecard">
-                    <Card style={{height: '98%', backgroundColor:'#383D3B', borderRadius: "40px"}}>
-                        <CardTitle style={{fontSize: '48px', color: '#52DEE5', margin: '10px'}}> 
+                    <Card style={mainCardStyle}>
+                        <CardTitle style={mainCardTitle}> 
                             Experience
                         </CardTitle>
                         <CardText style={{color: '#EEE5E9', margin:'10px'}}>
@@ -55,3 +60,9 @@ export const Experience =  () => {
 }
 
 export default Experience;
+
+const cardStyle = {height: '15%', borderRadius: '20px'}
+const cardTextStyle = {margin: "10px"}
+
+const mainCardStyle = {height: '98%', backgroundColor:'#383D3B', borderRadius: "40px"}
+const mainCardTitle = {fontSize: '48px', color: '#52DEE5', margin: '10px'}
