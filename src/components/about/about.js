@@ -7,11 +7,11 @@ export const About =  () => {
         <div className="aboutframe d-flex justify-content-center">
             <div className="row aboutcontianer align-middle">
                 <div className="col-6 ">
-                    <Card className="aboutcard" style={{ backgroundColor: '#7C7C7C', borderRadius: '40px' }}>
-                        <CardTitle style={{fontSize: '48px', color: '#52DEE5', margin: '10px'}}>
-                            About Rosie
+                    <Card className="aboutcard" style={cardStyle}>
+                        <CardTitle style={titleStyle}>
+                            About
                         </CardTitle>
-                        <CardText style={{color:'#EEE5E9', margin:'10px'}}>
+                        <CardText style={textStyle}>
                             I was born and raised in South Florida and has always loved the problem-solving 
                             nature and infinite challenges of math and science. Throughout high school, I worked 
                             on a math research project and began learning computer science, which led me to major 
@@ -35,3 +35,7 @@ export const About =  () => {
 }
 
 export default About;
+
+const cardStyle = { backgroundColor: '#7C7C7C', borderRadius: '40px' }
+const titleStyle = { fontSize: '48px', color: '#52DEE5', margin: '10px' }
+const textStyle = { color:'#EEE5E9', margin:'10px' }

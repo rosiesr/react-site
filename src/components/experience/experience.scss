@@ -1,5 +1,31 @@
 @import "../../../styles/variables";
 
-.test{
-    background-color: $pink-color;
+.experience{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 1%;
+
+    background: $pink-color;
+    box-sizing: border-box;
+}
+
+.experiencevertical{
+    margin: 1%;
+    height: 98%;
+}
+
+.experiencecontainter{
+    width: 98%;
+    height: 100%;
+}
+
+.experiencecard{
+    height: 100%
+}
+
+.smallspace{
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 1%; /* change this to whatever height you want it */
 }
