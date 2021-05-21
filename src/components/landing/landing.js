@@ -10,7 +10,7 @@ export const Landing =  () => {
                 <div className="landing-content-container" >
                     <div className="landing-content">
                         <h1 className="title">Rosie Rothschild</h1>
-                        <h1 className="subtitle">★★★★★★★</h1>
+                        <h1 className="subtitle">★★★★★★★★</h1>
                     </div>
                 </div>
           </div>
