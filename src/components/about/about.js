@@ -12,7 +12,7 @@ export const About =  () => {
                             About
                         </CardTitle>
                         <CardText style={textStyle}>
-                            I was born and raised in South Florida and has always loved the problem-solving 
+                            I was born and raised in South Florida and have always loved the problem-solving 
                             nature and infinite challenges of math and science. Throughout high school, I worked 
                             on a math research project and began learning computer science, which led me to major 
                             in Electrical Engineering and computer science at Yale. I have a passion for community, 

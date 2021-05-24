@@ -1,27 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, NavItem, Collapse, Nav, NavbarBrand, NavLink } from 'reactstrap'
 import "./mynav.scss";
 import email_icon from "./email_icon.png";
 import github_icon from "./github_icon.png";
 import linkedin_icon from "./linkedin_icon.png";
 
-const MyNav =  ({scrollTo}) => {
+const MyNav =  ({scrollTo, landingPos}) => {
     
-    return (
-        <div>
+  const [fixed, setFixed] = useState(false);
+  
+  useEffect(() => {
+    return () => { 
+      if(landingPos < 0){
+        setFixed(true);
+      }
+      else{
+        setFixed(false);
+      }
+    }
+  })
+  
+  return (
+        <div className={`${fixed ? 'sticky-top' : ''}`}>
         <Navbar light expand="md" className="nav">
-          <NavbarBrand className="brand" href="/">★ Rosie Rothschild</NavbarBrand>
-          {/* <NavbarToggler onClick={toggle} /> */}
+          <NavbarBrand className="brand"><NavLink onClick={() => scrollTo("landing")} style={{color:'#383D3B'}} > ★Rosie Rothschild </NavLink></NavbarBrand>
           <Collapse navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
                 <NavLink onClick={() => scrollTo("about")} >About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink onClick={() => scrollTo("experience")}>Experience</NavLink>
+                <NavLink onClick={() => scrollTo("experience", -50)}>Experience</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink onClick={() => scrollTo("projects")}>Projects</NavLink>
+                <NavLink onClick={() => scrollTo("projects", -50)}>Projects</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
