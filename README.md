@@ -2,7 +2,7 @@
 
 Create React App read me below
 
-Used ReactStrap library 
+Used ReactStrap and react-scroll library 
 
 # Getting Started with Create React App
 
