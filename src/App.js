@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
   Card
 } from 'reactstrap';
@@ -13,19 +13,43 @@ import Footer from 'components/footer/footer';
 
 function App() {
 
-  const scrollTo = (name) => {
+  const scrollTo = (name, offset) => {
     scroller.scrollTo(name, {
       duration: 400,
       delay: 0,
-      smooth: 'linear'
+      smooth: 'linear',
+      offset: offset
     })
   }
+  
+  const landingRef = useRef();
+
+  const [landingPos, setLandingPos] = useState(0);
+  
+  const handleLanding = () => {
+    const position = landingRef.current.getBoundingClientRect().bottom;
+    setLandingPos(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleLanding, { passive: true });
+    return () => {
+        window.removeEventListener('scroll', handleLanding);
+    };
+  }, []);
+
+
+
 
   return (
     <div className="App">
       <Card>
-        <Landing/>
-        <MyNav scrollTo={scrollTo} />
+        <div ref={landingRef}>
+          <Element name="landing">
+            <Landing/>
+          </Element>
+        </div>
+        <MyNav scrollTo={scrollTo} landingPos = {landingPos}/>
         <Element name="about">
           <About/>
         </Element>

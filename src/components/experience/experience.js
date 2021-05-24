@@ -69,5 +69,5 @@ const cardStyleDark = {height: '15%', borderRadius: '20px', backgroundColor:'#38
 const cardTextStyle = {margin: "10px", color: "#EEE5E9" }
 const cardTextStyleLight = {margin: "10px", color:"#383D3B"}
 
-const mainCardStyle = {height: '98%', backgroundColor:'#383D3B', borderRadius: "40px"}
+const mainCardStyle = {height: '100%', backgroundColor:'#383D3B', borderRadius: "40px"}
 const mainCardTitle = {fontSize: '48px', color: '#52DEE5', margin: '10px'}

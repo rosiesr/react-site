@@ -13,13 +13,14 @@ export const Projects =  () => {
                             <CardTitle style={mainTitle}>Projects</CardTitle>
                             <CardText style={mainText}>From personal projects to classwork to Hackathons, 
                                 here are some of the projects I’ve worked on.</CardText>
+                            <br/>
                         </Card>
                     </Col>
                     <Col>
                         <Card style={cardStyle}>
                             <CardTitle style={cardTitle}>Personal Website</CardTitle>
                             <CardText style={cardText}>You found my personal website! This was created 
-                            using React Strap and deployed using Github Pages.</CardText>
+                            using React and deployed using Github Pages.</CardText>
                             <div className="d-flex justify-content-center ">
                                 <a href="www.example.com" target="_blank" rel="noopener noreferrer">
                                     <Button style={buttonStyle}>NEED TO FIX</Button>
@@ -49,8 +50,8 @@ export const Projects =  () => {
                             create Google Calendar events for all assignments and exams. Created during Duke Hackathon 
                             in November 2020 and was recognized as a top 30 project out of 100+ submissions. </CardText>
                             <div className="d-flex justify-content-center ">
-                                <a href="www.example.com" target="_blank" rel="noopener noreferrer">
-                                    <Button style={buttonStyle}>NEED TO FIX</Button>
+                                <a href="https://github.com/rosiesr/syllabusparser" target="_blank" rel="noopener noreferrer">
+                                    <Button style={buttonStyle}>Source Code</Button>
                                 </a>
                             </div>
                         </Card>

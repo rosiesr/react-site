@@ -50,46 +50,7 @@
             }
         }
 
-        .navigate-container {
-            display: flex;
-            align-items: center;
-            margin-left: -10px;
-            margin-top: 28px;
-
-            .links-container {
-                display: flex;
-                flex-wrap: wrap;
-
-                a {                
-                    text-decoration: none;     
-                    color: $pink-color;           
-                }
-            }
-
-            .link-container {
-                height: 50px;
-                border-radius: 14px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 12px;
-                border: 1px solid $dark-grey-color;
-                margin: 0 10px;
-                margin-bottom: 20px;
-                background-color: white;
-                color: $dark-grey-color;
-                transition: all 0.5s;                
-            }            
-
-            .link-container:hover {
-                background-color: $dark-grey-color;
-                color: white;
-                a {
-                    color: white;
-                }
-            }
-
-        }
+        
     }
 
     .perspective-container {
