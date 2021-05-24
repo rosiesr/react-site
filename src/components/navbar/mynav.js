@@ -1,30 +1,27 @@
-import React, { useState } from "react";
-import { Navbar, NavItem, NavbarToggler, Collapse, Nav, NavbarBrand, NavLink } from 'reactstrap'
+import React from "react";
+import { Navbar, NavItem, Collapse, Nav, NavbarBrand, NavLink } from 'reactstrap'
 import "./mynav.scss";
 import email_icon from "./email_icon.png";
 import github_icon from "./github_icon.png";
 import linkedin_icon from "./linkedin_icon.png";
 
-const MyNav =  () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => setIsOpen(!isOpen);
+const MyNav =  ({scrollTo}) => {
     
     return (
         <div>
         <Navbar light expand="md" className="nav">
           <NavbarBrand className="brand" href="/">★ Rosie Rothschild</NavbarBrand>
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar>
+          {/* <NavbarToggler onClick={toggle} /> */}
+          <Collapse navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink href="">About</NavLink>
+                <NavLink onClick={() => scrollTo("about")} >About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="">Experience</NavLink>
+                <NavLink onClick={() => scrollTo("experience")}>Experience</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="">Projects</NavLink>
+                <NavLink onClick={() => scrollTo("projects")}>Projects</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
