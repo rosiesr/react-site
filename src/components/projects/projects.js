@@ -60,7 +60,7 @@ export const Projects =  () => {
                             <CardTitle style={cardTitle}>2-Bit Adder</CardTitle>
                             <CardText style={cardText}>Created using transistors, resistors, wires and a voltage supply for 
                             Introduction to Computer Engineering. Hardware engineering project </CardText>
-                            <CardImg top width="75%" src={bitAdder} alt="Card image cap" />
+                            <CardImg width="75%" src={bitAdder} alt="2 bit adder" />
 
                         </Card>
                     </Col>

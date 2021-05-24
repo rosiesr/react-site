@@ -8,6 +8,7 @@ export const Experience =  () => {
             <div className="experiencevertical d-flex justify-content-center">
             <div className="experiencecontainter row align-middle">
                 <div className="col-8">
+                    <br className="topspace"/>
                     <Card style={cardStyleDark}>
                         <CardText style={cardTextStyle}>PagerDuty: Software Engineer Intern</CardText>
                     </Card>
@@ -33,6 +34,7 @@ export const Experience =  () => {
                     </Card>
                 </div>
                 <div className="col-4 experiencecard">
+                    <br className="extopspace"/>
                     <Card style={mainCardStyle}>
                         <CardTitle style={mainCardTitle}> 
                             Experience

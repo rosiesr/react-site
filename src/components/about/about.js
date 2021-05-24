@@ -19,6 +19,8 @@ export const About =  () => {
                             ethical technology, and social justice. In my free time, I love playing and watching 
                             sports, spending time with my dog, Nemo, and throwing pottery. 
                         </CardText>
+                        <br/>
+                        <br/>
                     </Card>
                 </div>
                 <div className="col-6">
