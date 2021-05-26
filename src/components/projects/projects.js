@@ -13,7 +13,7 @@ export const Projects =  () => {
                             <CardTitle style={mainTitle}>Projects</CardTitle>
                             <CardText style={mainText}>From personal projects to classwork to Hackathons, 
                                 here are some of the projects I’ve worked on.</CardText>
-                            <br/>
+                            <br className="projects-br"/>
                         </Card>
                     </Col>
                     <Col>
@@ -54,14 +54,15 @@ export const Projects =  () => {
                                     <Button style={buttonStyle}>Source Code</Button>
                                 </a>
                             </div>
+                            <br/>
                         </Card>
                     </Col>
                     <Col>
-                        <Card style={cardStyle}>
+                        <Card style={cardStyle} className="">
                             <CardTitle style={cardTitle}>2-Bit Adder</CardTitle>
                             <CardText style={cardText}>Created using transistors, resistors, wires and a voltage supply for 
                             Introduction to Computer Engineering. Hardware engineering project </CardText>
-                            <CardImg width="75%" src={bitAdder} alt="2 bit adder" />
+                            <div><CardImg style={{width:"70%"}} src={bitAdder} alt="2 bit adder" /></div>
 
                         </Card>
                     </Col>
@@ -82,7 +83,7 @@ export default Projects;
 const rowStyle = {width:"100%"}
 
 const mainCard = {height:"100%", backgroundColor:"#7C7C7C", borderRadius:"20px", textAlign: "left"}
-const mainTitle = {color: "#52DEE5", margin: "10px", fontSize:"56px"}
+const mainTitle = {color: "#52DEE5", margin: "10px", fontSize:"52px"}
 const mainText = { margin: "10px", fontSize: "24px" }
 
 const cardStyle = {height:"100%", backgroundColor:"#EEE5E9", borderRadius:"20px"}
