@@ -8,6 +8,7 @@
     }
 }
 
+
 .landing-container {
     position: relative;
     background-color: $dark-grey-color;
@@ -40,6 +41,11 @@
             .subtitle {
                 color: $pink-color;
                 width: 60%;
+            }
+            .down-arrow{
+                position: absolute;
+                bottom: 0;
+                right: 0;
             }
 
             hr {

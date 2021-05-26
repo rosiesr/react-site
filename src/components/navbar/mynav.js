@@ -27,7 +27,7 @@ const MyNav =  ({scrollTo, landingPos}) => {
           <Collapse navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink onClick={() => scrollTo("about")} >About</NavLink>
+                <NavLink onClick={() => scrollTo("about", -50)} >About</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink onClick={() => scrollTo("experience", -50)}>Experience</NavLink>

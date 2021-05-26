@@ -46,7 +46,7 @@ function App() {
       <Card>
         <div ref={landingRef}>
           <Element name="landing">
-            <Landing/>
+            <Landing scrollTo={scrollTo} />
           </Element>
         </div>
         <MyNav scrollTo={scrollTo} landingPos = {landingPos}/>
