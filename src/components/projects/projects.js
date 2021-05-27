@@ -4,6 +4,7 @@ import "./projects.scss";
 import bitAdder from "./bit-adder.jpeg";
 
 export const Projects =  () => {
+    
     return (
         <div className="projects d-flex justify-content-center text-center">
             <Container className="projectcontainer" style={{height: "100%"}}>
