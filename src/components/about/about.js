@@ -110,4 +110,4 @@ export default About;
 
 const cardStyle = { backgroundColor: '#7C7C7C', borderRadius: '40px' }
 const titleStyle = { fontSize: '48px', color: '#52DEE5', margin: '10px' }
-const textStyle = { color:'#EEE5E9', margin:'10px' }
+const textStyle = { color:'#EEE5E9', margin:'10px', fontSize: '20px' }

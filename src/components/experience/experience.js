@@ -1,37 +1,17 @@
 import React from "react";
 import "./experience.scss";
 import { CardText, Card, CardTitle, Button } from "reactstrap";
+import ExperienceDeck from "./experienceDeck"
 
 export const Experience =  () => {
+    
     return (
         <div className="experience">
             <div className="experiencevertical d-flex justify-content-center">
             <div className="experiencecontainter row align-middle">
                 <div className="col-8">
                     <br className="topspace"/>
-                    <Card style={cardStyleDark}>
-                        <CardText style={cardTextStyle}>PagerDuty: Software Engineer Intern</CardText>
-                    </Card>
-                    <br className="smallspace"/>
-                    <Card style={cardStyleDark}>
-                        <CardText style={cardTextStyle}>Yale Computer Society: Vice President, Workshop Team Lead, Secretary</CardText>
-                    </Card>
-                    <br className="smallspace"/>
-                    <Card style={cardStyleMed}>
-                        <CardText style={cardTextStyle}>Rocketansky: Software Engineer Intern</CardText>
-                    </Card>
-                    <br className="smallspace"/>
-                    <Card style={cardStyleMed}>
-                        <CardText style={cardTextStyle}>Yale College Council: Davenport Senator and Deputy Director of Academics</CardText>
-                    </Card>
-                    <br className="smallspace"/>
-                    <Card style={cardStyleLight}>
-                        <CardText style={cardTextStyleLight}>Yale Physics Department: Phys 200 Peer Tutor</CardText>
-                    </Card>
-                    <br className="smallspace"/>
-                    <Card style={cardStyleLight}>
-                        <CardText style={cardTextStyleLight}>Other Experiences</CardText>
-                    </Card>
+                    <ExperienceDeck/>
                 </div>
                 <div className="col-4 experiencecard">
                     <br className="extopspace"/>
@@ -49,9 +29,10 @@ export const Experience =  () => {
                         my full resume.
                         </CardText>
                         <br/>
-                        <div className="d-flex justify-content-center ">
+                        <div className="d-flex justify-content-center">
                             <Button style={{width: '50%'}}> Download Full Resume </Button>
                         </div>
+                        <br/>
                     </Card>
                 </div>
             </div>
@@ -62,12 +43,6 @@ export const Experience =  () => {
 }
 
 export default Experience;
-
-const cardStyleLight = {height: '15%', borderRadius: '20px'}
-const cardStyleMed = {height: '15%', borderRadius: '20px', backgroundColor:'#7C7C7C'}
-const cardStyleDark = {height: '15%', borderRadius: '20px', backgroundColor:'#383D3B'}
-const cardTextStyle = {margin: "10px", color: "#EEE5E9" }
-const cardTextStyleLight = {margin: "10px", color:"#383D3B"}
 
 const mainCardStyle = {height: '100%', backgroundColor:'#383D3B', borderRadius: "40px"}
 const mainCardTitle = {fontSize: '48px', color: '#52DEE5', margin: '10px'}
