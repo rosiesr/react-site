@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./experience.scss";
 import { CardText, Card, Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
-export const ExperienceCard =  ( { title, header, body, color, hoverColor, fontColor } ) => {
+export const ExperienceCard =  ( { title, header, body, color, languages, other, hoverColor, fontColor } ) => {
     
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
@@ -16,12 +16,12 @@ export const ExperienceCard =  ( { title, header, body, color, hoverColor, fontC
   
   return (
       <>
-          <Card style={hover ? cardStyleHover : cardStyle} onClick={toggle} onMouseOver={toggleHover} onMouseOut={toggleHover}>
+          <Card style={hover ? cardStyleHover : cardStyle} className="justify-content-center"onClick={toggle} onMouseOver={toggleHover} onMouseOut={toggleHover}>
             <CardText style={cardTextStyle}>{ title }</CardText>
           </Card>
           <Modal isOpen={modal} toggle={toggle}>
               <ModalHeader toggle={toggle}>{ header }</ModalHeader>
-                <ModalBody> { body }</ModalBody>
+              <ModalBody> { body } <br/> { languages } <br/> { other } </ModalBody>
               <ModalFooter>
               <Button color="secondary" onClick={toggle}>Close</Button>
               </ModalFooter>

@@ -21,7 +21,7 @@ export const Projects =  () => {
                         <Card style={cardStyle}>
                             <CardTitle style={cardTitle}>Personal Website</CardTitle>
                             <CardText style={cardText}>You found my personal website! This was created 
-                            using React and deployed using Github Pages.</CardText>
+                            using React.</CardText>
                             <div className="d-flex justify-content-center ">
                                 <a href="www.example.com" target="_blank" rel="noopener noreferrer">
                                     <Button style={buttonStyle}>NEED TO FIX</Button>
