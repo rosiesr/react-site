@@ -23,7 +23,7 @@ const MyNav =  ({scrollTo, landingPos}) => {
   return (
         <div className={`${fixed ? 'sticky-top' : ''}`}>
         <Navbar light expand="md" className="nav">
-          <NavbarBrand className="brand"><NavLink onClick={() => scrollTo("landing")} style={{color:'#383D3B'}} > ★Rosie Rothschild </NavLink></NavbarBrand>
+          <NavbarBrand className="brand"><NavLink onClick={() => scrollTo("landing")} style={{color:'#383D3B'}} > ★ Rosie Rothschild </NavLink></NavbarBrand>
           <Collapse navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>

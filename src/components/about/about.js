@@ -74,19 +74,20 @@ export const About =  () => {
                             I was born and raised in South Florida and have always loved the problem-solving 
                             nature and infinite challenges of math and science. Throughout high school, I worked 
                             on a math research project and began learning computer science, which led me to major 
-                            in Electrical Engineering and computer science at Yale. I have a passion for community, 
-                            ethical technology, and social justice. In my free time, I love playing and watching 
-                            sports, spending time with my dog, Nemo, and throwing pottery.
+                            in electrical engineering and computer science at Yale. Specifically, I have a strong 
+                            interest in cybersecurity and ethical technology, although I’m still exploring the 
+                            endless subject areas of the technology sector. I am always looking for a challenge 
+                            and opportunity to learn something new. In my free time, I love playing and watching 
+                            sports, spending time with my dog, Nemo, and throwing pottery. 
                             <br/>
                             <br/>
-                            More stuff about me here.
                         </CardText>
                         <br/>
                         <br/>
                     </Card>
                 </div>
                 <div className="col-6">
-                    <Card style={cardStyle}>
+                    <Card style={cardStyleCarousel} className="justify-content-center">
                     <Carousel
                     activeIndex={activeIndex}
                     next={next}
@@ -108,6 +109,7 @@ export const About =  () => {
 
 export default About;
 
-const cardStyle = { backgroundColor: '#7C7C7C', borderRadius: '40px' }
+const cardStyle = { backgroundColor: '#7C7C7C', borderRadius: '40px', height: '100%', margin: '10px' }
+const cardStyleCarousel = { backgroundColor: 'white', borderRadius: '40px', height: '100%', border:'0px' }
 const titleStyle = { fontSize: '48px', color: '#52DEE5', margin: '10px' }
-const textStyle = { color:'#EEE5E9', margin:'10px', fontSize: '20px' }
+const textStyle = { color:'#EEE5E9', margin:'10px', fontSize: '18px' }

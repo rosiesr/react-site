@@ -16,7 +16,10 @@
 .nav{
     background-color: $aqua-color;
     justify-content: space-between;
-
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight:  bold;
+    font-size: 20px;
+    z-index: 52;
 }
 
 .brand{

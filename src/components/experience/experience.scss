@@ -7,6 +7,8 @@
 
     background: $pink-color;
     box-sizing: border-box;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
 
 }
 
@@ -38,8 +40,4 @@
     display: block; /* makes it have a width */
     content: ""; /* clears default height */
     margin-top: 20%; /* change this to whatever height you want it */
-}
-
-.hover{
-    color: $aqua-color;
 }
