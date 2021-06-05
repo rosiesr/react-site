@@ -23,8 +23,8 @@ export const Projects =  () => {
                             <CardText style={cardText}>You found my personal website! This was created 
                             using React.</CardText>
                             <div className="d-flex justify-content-center ">
-                                <a href="www.example.com" target="_blank" rel="noopener noreferrer">
-                                    <Button style={buttonStyle}>NEED TO FIX</Button>
+                                <a href="https://github.com/rosiesr/react-site" target="_blank" rel="noopener noreferrer">
+                                    <Button style={buttonStyle}>Source Code</Button>
                                 </a>
                             </div>
                         </Card>
