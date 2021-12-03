@@ -79,7 +79,7 @@ const experienceData = [
         title: "Yale Physics Department: Core Based Peer Tutor", 
         header: "Yale Physics Department", 
         body: `I was selected by professor recommendation to work as a peer tutor, where I hosted office hours and ran extra help sessions
-        for students in introductory physics during fall 2020.`, 
+        for students in introductory physics during fall 2020 and fall 2021.`, 
         color: "white",
         hoverColor: "#F7F7F7",
         fontColor: "#383D3B"
