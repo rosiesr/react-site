@@ -88,7 +88,7 @@ const experienceData = [
         title: "Other Experiences", 
         header: "Other Experiences", 
         body: `Code Haven: computer science instructor for middle school students at New Haven public schools`, 
-        languages: `First Year Outdoor Orientation Trip Leader: selected to lead backpacking trips for incoming first-years`, 
+        languages: `First Year Outdoor Orientation Trip Leader: selected to lead backpacking trips for incoming first-years and co-head of teaching hard skills`, 
         other: `Yale Women’s Club Soccer: Social Chair, Outside midfielder`,
         color: "white",
         hoverColor: "#F7F7F7",
